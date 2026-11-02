@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lindungi Fauna Indonesia</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f7ef;
+  color: #263b2b;
+  line-height: 1.6;
+}
+
+header {
+  background: #174d35;
+  color: white;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+nav {
+  background: #246b49;
+  padding: 13px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #b8f28a;
+}
+
+.hero {
+  background: linear-gradient(135deg, #174d35, #68a85e);
+  color: white;
+  padding: 65px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #e3a928;
+  color: #263b2b;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 7px 3px;
+}
+
+button:hover {
+  background: #f5c957;
+  transform: scale(1.03);
+}
+
+section {
+  padding: 40px 8%;
+}
+
+h2.section-title {
+  text-align: center;
+  color: #21633e;
+  margin-bottom: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px #00000012;
+  text-align: center;
+}
+
+.animal {
+  font-size: 55px;
+}
+
+.card h3 {
+  color: #246b49;
+  margin: 8px 0;
+}
+
+.game-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 3px 12px #00000012;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  background: #e7f2e7;
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.option:hover {
+  background: #cde8cb;
+}
+
+#feedback {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#score {
+  color: #21633e;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+footer {
+  background: #174d35;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 350px;
+  margin: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌿 LINDUNGI FAUNA INDONESIA 🐅</h1>
+  <h3>KELOMPOK 1</h3>
+  <p>Kenali, Sayangi, dan Lindungi Satwa Indonesia!</p>
+</header>
+
+<nav>
+  <a href="#home">Beranda</a>
+  <a href="#fauna">Fauna</a>
+  <a href="#game">Game</a>
+  <a href="#kuis">Kuis</a>
+  <a href="#misi">Misi</a>
+</nav>
+
+<div class="hero" id="home">
+  <h2>Selamatkan Fauna Kita!</h2>
+  <p>
+    Indonesia memiliki kekayaan fauna yang luar biasa.
+    Namun, banyak satwa menghadapi ancaman kepunahan.
+    Yuk, ikut menjaga kelestariannya!
+  </p>
+  <br>
+  <button onclick="location.href='#fauna'">
+    Mulai Jelajahi →
+  </button>
+</div>
+
+<section id="fauna">
+  <h2 class="section-title">🐾 Kenali Fauna Langka Indonesia</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="animal">🐅</div>
+      <h3>Harimau Sumatera</h3>
+      <p>
+        Hidup di hutan Sumatera. Terancam akibat
+        perburuan dan kerusakan habitat.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="animal">🦏</div>
+      <h3>Badak Jawa</h3>
+      <p>
+        Salah satu mamalia paling langka di dunia.
+        Dilindungi di Taman Nasional Ujung Kulon.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="animal">🐘</div>
+      <h3>Gajah Sumatera</h3>
+      <p>
+        Mengalami ancaman akibat kehilangan habitat
+        dan konflik dengan manusia.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="animal">🦧</div>
+      <h3>Orangutan</h3>
+      <p>
+        Primata cerdas yang hidup di Sumatera dan
+        Kalimantan. Terancam oleh deforestasi.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="animal">🐉</div>
+      <h3>Komodo</h3>
+      <p>
+        Kadal terbesar di dunia yang berasal dari
+        beberapa pulau di Nusa Tenggara Timur.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="animal">🦜</div>
+      <h3>Jalak Bali</h3>
+      <p>
+        Burung endemik Bali yang terancam akibat
+        perdagangan satwa ilegal.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="game">
+  <h2 class="section-title">🎮 Game Tebak Fauna</h2>
+
+  <div class="game-box">
+    <h3 id="animalQuestion">
+      Hewan apakah yang memiliki satu cula
+      dan hidup di Ujung Kulon?
+    </h3>
+
+    <div id="animalOptions"></div>
+
+    <p id="feedback"></p>
+    <p>Skor: <span id="animalScore">0</span></p>
+
+    <button onclick="nextAnimal()">Pertanyaan Berikutnya</button>
+  </div>
+</section>
+
+<section id="kuis">
+  <h2 class="section-title">🧠 Kuis Perlindungan Fauna</h2>
+
+  <div class="game-box">
+    <h3 id="question">Memuat pertanyaan...</h3>
+
+    <div id="options"></div>
+
+    <p id="quizFeedback"></p>
+
+    <p id="score">Skor: 0</p>
+
+    <button onclick="nextQuestion()">Soal Berikutnya</button>
+
+    <button onclick="restartQuiz()">Ulangi Kuis</button>
+  </div>
+</section>
+
+<section id="misi">
+  <h2 class="section-title">🌳 Misi Penyelamatan Fauna</h2>
+
+  <div class="game-box">
+    <h3 id="missionQuestion">
+      Kamu melihat seseorang menjual satwa liar
+      yang dilindungi. Apa tindakanmu?
+    </h3>
+
+    <button onclick="missionAnswer(false)">
+      Membeli satwa tersebut
+    </button>
+
+    <button onclick="missionAnswer(true)">
+      Melaporkan kepada pihak berwenang
+    </button>
+
+    <button onclick="missionAnswer(false)">
+      Membiarkannya saja
+    </button>
+
+    <p id="missionFeedback"></p>
+
+    <p id="missionScore">Poin misi: 0</p>
+  </div>
+</section>
+
+<section style="text-align:center">
+  <h2 class="section-title">💚 Jadilah Pahlawan Fauna!</h2>
+  <p>
+    Perlindungan fauna bukan hanya tugas pemerintah,
+    tetapi tanggung jawab kita bersama.
+  </p>
+  <br>
+  <h3>Mulai dari tindakan kecil untuk masa depan bumi!</h3>
+</section>
+
+<footer>
+  <p>🌿 Lindungi Fauna Indonesia 🌿</p>
+  <p>Belajar • Bermain • Melestarikan</p>
+  <p>© 2026 Edukasi Lingkungan</p>
+</footer>
+
+<script>
+
+// GAME TEBAK FAUNA
+
+const animals = [
+  {
+    q: "Hewan apakah yang memiliki satu cula dan hidup di Ujung Kulon?",
+    a: ["Badak Jawa", "Gajah Sumatera", "Komodo"],
+    c: "Badak Jawa"
+  },
+  {
+    q: "Primata cerdas yang hidup di Kalimantan dan Sumatera adalah?",
+    a: ["Bekantan", "Orangutan", "Anoa"],
+    c: "Orangutan"
+  },
+  {
+    q: "Hewan endemik Indonesia yang dikenal sebagai kadal terbesar adalah?",
+    a: ["Buaya Muara", "Komodo", "Biawak"],
+    c: "Komodo"
+  }
+];
+
+let animalIndex = 0;
+let animalPoints = 0;
+
+function showAnimal() {
+  let item = animals[animalIndex];
+
+  document.getElementById("animalQuestion").innerText = item.q;
+
+  let html = "";
+
+  item.a.forEach(answer => {
+    html += `<button class="option"
+      onclick="checkAnimal('${answer}')">${answer}</button>`;
+  });
+
+  document.getElementById("animalOptions").innerHTML = html;
+  document.getElementById("feedback").innerText = "";
+}
+
+function checkAnimal(answer) {
+  let correct = animals[animalIndex].c;
+
+  if (answer === correct) {
+    animalPoints += 10;
+    document.getElementById("feedback").innerText =
+      "🎉 Benar! Kamu hebat!";
+  } else {
+    document.getElementById("feedback").innerText =
+      "Belum tepat! Jawaban: " + correct;
+  }
+
+  document.getElementById("animalScore").innerText = animalPoints;
+}
+
+function nextAnimal() {
+  animalIndex = (animalIndex + 1) % animals.length;
+  showAnimal();
+}
+
+showAnimal();
+
+
+// KUIS PERLINDUNGAN FAUNA
+
+const questions = [
+  {
+    q: "Apa tujuan utama perlindungan fauna?",
+    a: [
+      "Menjaga kelestarian hewan",
+      "Memperjualbelikan hewan",
+      "Mengurangi populasi hewan",
+      "Mengubah habitat hewan"
+    ],
+    c: 0,
+    info: "Perlindungan fauna bertujuan menjaga populasi dan kelestarian satwa."
+  },
+  {
+    q: "Apa penyebab utama terancamnya habitat fauna?",
+    a: [
+      "Reboisasi",
+      "Penebangan hutan liar",
+      "Penanaman pohon",
+      "Pembuatan taman nasional"
+    ],
+    c: 1,
+    info: "Penebangan hutan liar dapat menghancurkan habitat satwa."
+  },
+  {
+    q: "Di mana Badak Jawa dilindungi?",
+    a: [
+      "Taman Nasional Komodo",
+      "Taman Nasional Ujung Kulon",
+      "Taman Nasional Bunaken",
+      "Taman Nasional Bromo"
+    ],
+    c: 1,
+    info: "Badak Jawa dilindungi di Taman Nasional Ujung Kulon."
+  },
+  {
+    q: "Apa yang harus dilakukan jika menemukan perdagangan satwa liar ilegal?",
+    a: [
+      "Ikut membeli",
+      "Membiarkannya",
+      "Melaporkan kepada pihak berwenang",
+      "Menyebarkan lokasi satwa"
+    ],
+    c: 2,
+    info: "Laporkan melalui saluran resmi agar dapat ditindaklanjuti."
+  },
+  {
+    q: "Manakah contoh upaya konservasi in-situ?",
+    a: [
+      "Kebun binatang",
+      "Penangkaran buatan",
+      "Taman nasional",
+      "Laboratorium"
+    ],
+    c: 2,
+    info: "Konservasi in-situ melindungi satwa di habitat aslinya."
+  }
+];
+
+let current = 0;
+let points = 0;
+let answered = false;
+
+function showQuestion() {
+  answered = false;
+
+  let item = questions[current];
+
+  document.getElementById("question").innerText =
+    (current + 1) + ". " + item.q;
+
+  let html = "";
+
+  item.a.forEach((answer, index) => {
+    html += `<button class="option"
+      onclick="answerQuiz(${index})">${answer}</button>`;
+  });
+
+  document.getElementById("options").innerHTML = html;
+  document.getElementById("quizFeedback").innerText = "";
+  document.getElementById("score").innerText = "Skor: " + points;
+}
+
+function answerQuiz(choice) {
+  if (answered) return;
+
+  answered = true;
+
+  let item = questions[current];
+
+  if (choice === item.c) {
+    points += 20;
+    document.getElementById("quizFeedback").innerText =
+      "🎉 Benar! " + item.info;
+  } else {
+    document.getElementById("quizFeedback").innerText =
+      "❌ Belum tepat. " + item.info;
+  }
+
+  document.getElementById("score").innerText =
+    "Skor: " + points;
+}
+
+function nextQuestion() {
+  if (!answered) {
+    document.getElementById("quizFeedback").innerText =
+      "Pilih jawaban terlebih dahulu!";
+    return;
+  }
+
+  current++;
+
+  if (current >= questions.length) {
+    document.getElementById("question").innerText =
+      "🏆 Kuis Selesai!";
+
+    document.getElementById("options").innerHTML = "";
+
+    document.getElementById("quizFeedback").innerText =
+      "Nilai akhir kamu: " + points + " dari 100. " +
+      (points >= 80 ? "Luar biasa! Kamu Peduli Fauna!" :
+      points >= 60 ? "Bagus! Terus belajar!" :
+      "Ayo pelajari lagi perlindungan fauna!");
+
+    return;
+  }
+
+  showQuestion();
+}
+
+function restartQuiz() {
+  current = 0;
+  points = 0;
+  showQuestion();
+}
+
+showQuestion();
+
+
+// MISI PENYELAMATAN
+
+let missionPoints = 0;
+let missionDone = false;
+
+function missionAnswer(correct) {
+  if (missionDone) return;
+
+  missionDone = true;
+
+  if (correct) {
+    missionPoints += 20;
+    document.getElementById("missionFeedback").innerText =
+      "🌟 Hebat! Melaporkan perdagangan ilegal membantu melindungi satwa.";
+  } else {
+    document.getElementById("missionFeedback").innerText =
+      "Yuk, pilih tindakan yang membantu melindungi satwa liar.";
+  }
+
+  document.getElementById("missionScore").innerText =
+    "Poin misi: " + missionPoints;
+
+  document.getElementById("missionQuestion").innerText =
+    "Misi selesai! Terima kasih sudah peduli fauna.";
+
+}
+
+</script>
+
+</body>
+</html>
